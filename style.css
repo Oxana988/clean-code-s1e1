@@ -103,7 +103,10 @@
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.btn,
+.item__checkbox,
+.item__label,
+.item__input {
   vertical-align: middle;
 }
 
@@ -129,21 +132,21 @@ li > * {
 }
 
 /* Completed */
-ul#completed-tasks label {
+.list-completed .item__label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type="text"] {
+.item__input {
   display:none
 }
 
-ul li.edit-mode input[type="text"] {
+.edit-mode .item__input {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.edit-mode .item__label {
   display:none;
 }
